@@ -1,6 +1,6 @@
 # FisheyeVLA.github.io
 
-Project page for **Fisheye-VLA: Decoupling Coverage and Acuity for Manipulation with a Single Fisheye Camera**.
+Concise academic project page for **Fisheye-VLA: Decoupling Coverage and Acuity for Manipulation with a Single Fisheye Camera**.
 
 ## Preview locally
 
@@ -28,7 +28,3 @@ For widest browser support, export H.264 video with AAC audio and the `yuv420p` 
 - Replace the disabled **Paper soon** button in `index.html` when the paper is public.
 - Replace the disabled **Code soon** button in `index.html` when the repository is public.
 - Update the BibTeX journal/arXiv fields after the preprint is posted.
-
-## Credits
-
-The layout follows common academic project-page conventions and is visually inspired by the open-source [Academic Project Page Template](https://github.com/seemandhar/paper-template) and [Nerfies](https://nerfies.github.io/). Site-specific design and implementation are customized for Fisheye-VLA.
