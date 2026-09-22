@@ -62,19 +62,92 @@
       <section class="section muted-band" aria-labelledby="demos-title">
         <div class="container">
           <div class="section-intro">
-            <h2 id="demos-title">Task Demonstrations</h2>
-            <p>Eight slots reserved for short task clips.</p>
+            <h2 id="demos-title">System Demonstrations</h2>
+            <p>Robot execution, policy observations, and human data collection.</p>
           </div>
-          <div class="demo-grid">
-            <!-- Replace a .demo-placeholder with a <video> when each clip is ready. -->
-            <div class="demo-placeholder"><strong>01</strong><span>Demo video</span></div>
-            <div class="demo-placeholder"><strong>02</strong><span>Demo video</span></div>
-            <div class="demo-placeholder"><strong>03</strong><span>Demo video</span></div>
-            <div class="demo-placeholder"><strong>04</strong><span>Demo video</span></div>
-            <div class="demo-placeholder"><strong>05</strong><span>Demo video</span></div>
-            <div class="demo-placeholder"><strong>06</strong><span>Demo video</span></div>
-            <div class="demo-placeholder"><strong>07</strong><span>Demo video</span></div>
-            <div class="demo-placeholder"><strong>08</strong><span>Demo video</span></div>
+
+          <div class="demo-group">
+            <h3>Robot Manipulation</h3>
+            <div class="demo-grid">
+              <article class="demo-card">
+                <div class="demo-media">
+                  <video controls muted loop playsinline preload="metadata" poster="static/images/demos/shelf-to-box.jpg">
+                    <source src="static/videos/shelf-to-box.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="demo-copy">
+                  <h4>Shelf-to-Box Retrieval</h4>
+                  <p>Retrieving an object from an elevated shelf and transferring it to the box.</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <div class="demo-media">
+                  <video controls muted loop playsinline preload="metadata" poster="static/images/demos/toy-to-shelf.jpg">
+                    <source src="static/videos/toy-to-shelf.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="demo-copy">
+                  <h4>Toy-to-Shelf Placement</h4>
+                  <p>Picking up the toy and placing it on the elevated target shelf.</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <div class="demo-media">
+                  <video controls muted loop playsinline preload="metadata" poster="static/images/demos/fruit-to-box.jpg">
+                    <source src="static/videos/fruit-to-box.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="demo-copy">
+                  <h4>Wide-Workspace Fruit Transfer</h4>
+                  <p>Selecting and transferring fruit across the expanded tabletop workspace.</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <div class="demo-media">
+                  <video controls muted loop playsinline preload="metadata" poster="static/images/demos/bin-to-conveyor.jpg">
+                    <source src="static/videos/bin-to-conveyor.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="demo-copy">
+                  <h4>Bin-to-Conveyor Transfer</h4>
+                  <p>Placing fruit onto the moving conveyor under the same global/local policy.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="demo-group secondary-demos">
+            <h3>Observation &amp; Data Collection</h3>
+            <div class="demo-grid">
+              <article class="demo-card interface-card">
+                <div class="demo-media">
+                  <span class="video-badge">Policy Input</span>
+                  <video controls muted loop playsinline preload="metadata" poster="static/images/demos/policy-input.jpg">
+                    <source src="static/videos/policy-input.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="demo-copy">
+                  <h4>Global + Local Policy Views</h4>
+                  <p>The fisheye overview and two tracked end-effector crops used by the policy.</p>
+                </div>
+              </article>
+
+              <article class="demo-card">
+                <div class="demo-media">
+                  <span class="video-badge">Human Data Collection</span>
+                  <video controls muted loop playsinline preload="metadata" poster="static/images/demos/human-data-collection.jpg">
+                    <source src="static/videos/human-data-collection.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="demo-copy">
+                  <h4>Handheld Demonstration Collection</h4>
+                  <p>Tracked handheld gripper poses reuse the same global/local rendering interface.</p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>

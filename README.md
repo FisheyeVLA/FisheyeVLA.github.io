@@ -10,18 +10,9 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## Add the eight short videos
+## Demonstration videos
 
-1. Put optimized MP4 files in `static/videos/` as `demo-01.mp4` through `demo-08.mp4`.
-2. In `index.html`, replace the corresponding `.demo-slot` with:
-
-```html
-<video controls muted loop playsinline preload="metadata">
-  <source src="static/videos/demo-01.mp4" type="video/mp4" />
-</video>
-```
-
-For widest browser support, export H.264 video with AAC audio and the `yuv420p` pixel format.
+Six web-optimized H.264 videos are organized into robot manipulation and observation/data-collection groups under `static/videos/`.
 
 ## Update release links
 
