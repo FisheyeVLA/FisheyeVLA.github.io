@@ -25,6 +25,7 @@ For widest browser support, export H.264 video with AAC audio and the `yuv420p` 
 
 ## Update release links
 
+- Replace the disabled **Paper soon** button in `index.html` when the paper is public.
 - Replace the disabled **Code soon** button in `index.html` when the repository is public.
 - Update the BibTeX journal/arXiv fields after the preprint is posted.
 
