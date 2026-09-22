@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07110f" />
+    <meta
+      name="description"
+      content="Fisheye-VLA unifies wide workspace coverage and interaction-level visual acuity for robotic manipulation using a single fixed fisheye camera."
+    />
+    <meta
+      name="keywords"
+      content="Fisheye-VLA, vision-language-action, robotic manipulation, fisheye camera, robot learning"
+    />
+    <meta name="author" content="Ziang Ren, Zike Yan, Raymond Zhang, Xuguo He, Zhongyu Li" />
+    <title>Fisheye-VLA</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307110f'/%3E%3Ccircle cx='32' cy='32' r='21' fill='none' stroke='%233de0bc' stroke-width='5'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23ff8b5e'/%3E%3Cpath d='M7 32h50M32 7v50' stroke='%23f4f7f5' stroke-width='2' opacity='.45'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <script src="static/js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Fisheye-VLA home">
+        <span class="brand-lens" aria-hidden="true"></span>
+        <span>Fisheye-VLA</span>
+      </a>
+      <div class="nav-links">
+        <a href="#video">Video</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#citation">Citation</a>
+      </div>
+    </nav>
+
+    <main id="main">
+      <header class="hero" id="top">
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Single-camera · Bimanual manipulation · VLA</p>
+          <h1>
+            <span>Fisheye-VLA</span>
+            <small>Decoupling Coverage and Acuity for Manipulation with a Single Fisheye Camera</small>
+          </h1>
+
+          <div class="authors" aria-label="Authors">
+            <span>Ziang Ren<sup>1</sup></span>
+            <span>Zike Yan<sup>1</sup></span>
+            <span>Raymond Zhang<sup>2,3</sup></span>
+            <span>Xuguo He<sup>2</sup></span>
+            <span>Zhongyu Li<sup>1,*</sup></span>
+          </div>
+          <p class="affiliations">
+            <sup>1</sup>The Chinese University of Hong Kong · <sup>2</sup>DeepCybo ·
+            <sup>3</sup>University of Washington
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="static/pdfs/fisheye-vla-paper.pdf" target="_blank" rel="noreferrer">
+              <span aria-hidden="true">↗</span> Paper
+            </a>
+            <a class="button" href="#video"><span aria-hidden="true">▶</span> Video</a>
+            <span class="button disabled" aria-disabled="true" title="Code link will be added after release">
+              &lt;/&gt; Code soon
+            </span>
+          </div>
+        </div>
+
+        <div class="metric-strip reveal" aria-label="Headline results">
+          <div><strong>1</strong><span>fixed fisheye camera</span></div>
+          <div><strong>220°</strong><span>captured field of view</span></div>
+          <div><strong>84%</strong><span>success in region R2</span></div>
+          <div><strong>82%</strong><span>success in region R3</span></div>
+        </div>
+      </header>
+
+      <section class="section video-section" id="video">
+        <div class="section-heading reveal">
+          <p class="kicker">Project video</p>
+          <h2>One camera. Global awareness and local precision.</h2>
+          <p>The complete 2:32 overview, optimized for fast playback on the web.</p>
+        </div>
+        <div class="main-video-shell reveal">
+          <video controls playsinline preload="metadata" poster="static/images/video-poster.jpg">
+            <source src="static/videos/fisheye-vla-main.mp4" type="video/mp4" />
+            Your browser does not support embedded video.
+          </video>
+          <div class="video-label">
+            <span class="pulse" aria-hidden="true"></span>
+            Fisheye-VLA · Project overview
+          </div>
+        </div>
+      </section>
+
+      <section class="section demos" id="demos">
+        <div class="section-heading reveal">
+          <p class="kicker">More demonstrations</p>
+          <h2>Eight slots, ready for your short clips.</h2>
+          <p>Replace each numbered card with a task video when the clips are ready.</p>
+        </div>
+        <div class="demo-grid">
+          <div class="demo-slot reveal"><span>01</span><strong>Demo slot</strong><small>MP4 · 16:9</small></div>
+          <div class="demo-slot reveal"><span>02</span><strong>Demo slot</strong><small>MP4 · 16:9</small></div>
+          <div class="demo-slot reveal"><span>03</span><strong>Demo slot</strong><small>MP4 · 16:9</small></div>
+          <div class="demo-slot reveal"><span>04</span><strong>Demo slot</strong><small>MP4 · 16:9</small></div>
+          <div class="demo-slot reveal"><span>05</span><strong>Demo slot</strong><small>MP4 · 16:9</small></div>
+          <div class="demo-slot reveal"><span>06</span><strong>Demo slot</strong><small>MP4 · 16:9</small></div>
+          <div class="demo-slot reveal"><span>07</span><strong>Demo slot</strong><small>MP4 · 16:9</small></div>
+          <div class="demo-slot reveal"><span>08</span><strong>Demo slot</strong><small>MP4 · 16:9</small></div>
+        </div>
+      </section>
+
+      <section class="section overview" id="overview">
+        <div class="tldr reveal">
+          <p class="kicker">TL;DR</p>
+          <p>
+            Fisheye-VLA replaces a front camera and physical wrist cameras with one fixed fisheye,
+            rendering a persistent global view and two end-effector-centered perspective crops.
+          </p>
+        </div>
+
+        <figure class="paper-figure reveal">
+          <img src="static/images/overview.png" alt="A fixed fisheye camera provides a global view and two local policy views while covering a wider scene." />
+          <figcaption>
+            A single physical camera provides the complete workspace and interaction-level detail.
+          </figcaption>
+        </figure>
+
+        <div class="text-grid reveal">
+          <div>
+            <p class="kicker">Abstract</p>
+            <h2>Coverage should not come at the cost of acuity.</h2>
+          </div>
+          <div class="prose">
+            <p>
+              Manipulation needs broad scene awareness and detailed local feedback, but conventional
+              rigs obtain them from separate front and wrist cameras. Fisheye-VLA brings both into a
+              single passive fisheye interface: the global stream preserves the workspace while local
+              perspective crops direct detail toward the interaction.
+            </p>
+            <p>
+              A controlled re-rendering study shows that end-effector-centered views capture most of
+              the estimated benefit of a much larger candidate pool. Calibrated projection and motion
+              lead track the crops; shared ray encoding preserves their spatial meaning as they move.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section method" id="method">
+        <div class="section-heading reveal">
+          <p class="kicker">Method</p>
+          <h2>A global/local visual interface in one shared ray frame.</h2>
+          <p>
+            Current end-effector poses predict where visual detail will be needed. The renderer
+            rectifies two local views directly from the source fisheye while keeping a resized global view.
+          </p>
+        </div>
+        <figure class="paper-figure wide reveal">
+          <img src="static/images/pipeline.png" alt="Fisheye-VLA pipeline from end-effector poses and a fisheye image through local crop rendering, ray encoding, and the VLA policy." />
+          <figcaption>
+            <strong>Pipeline.</strong> Calibrated crop-and-rectify rendering feeds global and local
+            appearance tokens to the VLA; source-ray features provide a common geometric reference.
+          </figcaption>
+        </figure>
+
+        <div class="method-cards">
+          <article class="method-card reveal">
+            <span>01</span>
+            <h3>Persistent global view</h3>
+            <p>The full fisheye image keeps targets, destinations, and scene context visible.</p>
+          </article>
+          <article class="method-card reveal">
+            <span>02</span>
+            <h3>Action-centered crops</h3>
+            <p>One perspective crop per hand spends visual detail where manipulation happens.</p>
+          </article>
+          <article class="method-card reveal">
+            <span>03</span>
+            <h3>Shared ray encoding</h3>
+            <p>Global and moving local tokens retain their physical viewing directions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section results" id="results">
+        <div class="section-heading reveal">
+          <p class="kicker">Results</p>
+          <h2>The advantage grows with the workspace.</h2>
+          <p>
+            Across 50 trials per region, Fisheye-VLA reaches 84% and 82% success in the two expanded
+            tabletop regions, where some targets extend beyond the ordinary front-camera footprint.
+          </p>
+        </div>
+
+        <div class="result-layout">
+          <div class="chart-card reveal">
+            <div class="chart-header">
+              <span>Task A success</span><span>50 trials / region</span>
+            </div>
+            <div class="bar-group">
+              <div class="bar-row"><span>R1</span><div class="bar-track"><i style="--value:72%"></i></div><strong>72%</strong></div>
+              <div class="bar-row"><span>R2</span><div class="bar-track"><i style="--value:84%"></i></div><strong>84%</strong></div>
+              <div class="bar-row"><span>R3</span><div class="bar-track"><i style="--value:82%"></i></div><strong>82%</strong></div>
+            </div>
+            <p class="chart-note">Regional mean: <strong>79.3%</strong></p>
+          </div>
+
+          <figure class="paper-figure compact reveal">
+            <img src="static/images/placement-results.png" alt="Nested tabletop regions and endpoint error reduction for random, one end-effector, two end-effectors, and the full-candidate reference." />
+            <figcaption>Two end-effector views capture approximately 92.5% of the full-candidate reference gain.</figcaption>
+          </figure>
+        </div>
+
+        <figure class="paper-figure wide task-figure reveal">
+          <img src="static/images/task-suite.png" alt="Execution sequences for fruit transfer, shelf placement, shelf retrieval, and conveyor transfer tasks." />
+          <figcaption>
+            One multi-task policy performs tabletop transfer, shelf placement and retrieval, and
+            moving-object conveyor manipulation with the same global/local rendering rule.
+          </figcaption>
+        </figure>
+
+        <div class="task-stats">
+          <div class="reveal"><strong>79%</strong><span>Fruit → box</span></div>
+          <div class="reveal"><strong>88%</strong><span>Toy → shelf</span></div>
+          <div class="reveal"><strong>86%</strong><span>Mug → box</span></div>
+          <div class="reveal"><strong>72%</strong><span>Conveyor → bin</span></div>
+          <div class="reveal"><strong>68%</strong><span>Bin → conveyor</span></div>
+        </div>
+      </section>
+
+      <section class="section citation" id="citation">
+        <div class="section-heading reveal">
+          <p class="kicker">Citation</p>
+          <h2>BibTeX</h2>
+        </div>
+        <div class="bibtex-shell reveal">
+          <pre id="bibtex"><code>@article{ren2026fisheyevla,
+  title   = {Fisheye-VLA: Decoupling Coverage and Acuity for Manipulation with a Single Fisheye Camera},
+  author  = {Ren, Ziang and Yan, Zike and Zhang, Raymond and He, Xuguo and Li, Zhongyu},
+  journal = {arXiv preprint},
+  year    = {2026}
+}</code></pre>
+          <button class="copy-button" type="button" data-copy="bibtex">Copy</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>Fisheye-VLA</strong>
+        <p>One camera for coverage and acuity.</p>
+      </div>
+      <p class="credit">
+        Academic project-page conventions inspired by
+        <a href="https://github.com/seemandhar/paper-template" target="_blank" rel="noreferrer">this open template</a>
+        and the <a href="https://nerfies.github.io/" target="_blank" rel="noreferrer">Nerfies project page</a>.
+      </p>
+    </footer>
+  </body>
+</html>
