@@ -16,6 +16,5 @@ Six web-optimized H.264 videos are organized into robot manipulation and observa
 
 ## Update release links
 
-- Replace the disabled **Paper soon** button in `index.html` when the paper is public.
 - Replace the disabled **Code soon** button in `index.html` when the repository is public.
 - Update the BibTeX journal/arXiv fields after the preprint is posted.
