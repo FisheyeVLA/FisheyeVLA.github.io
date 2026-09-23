@@ -82,6 +82,7 @@ pre { min-width: 680px; margin: 0; padding: 1.25rem; color: #263343; font: .82re
 .bibtex button:hover, .bibtex button:focus-visible { border-color: var(--navy); }
 footer { padding: 1.6rem 1rem 2.4rem; color: #8a929d; font-size: .82rem; text-align: center; }
 footer p { margin: 0; }
+.visit-counter { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 
 @media (max-width: 760px) {
   .publication-header { padding-top: 2.2rem; }

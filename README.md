@@ -14,6 +14,10 @@ Then open `http://localhost:8000`.
 
 Six web-optimized H.264 videos are organized into robot manipulation and observation/data-collection groups under `static/videos/`.
 
+## Traffic
+
+Page loads are counted with a privacy-friendly, cookie-free Hits beacon. View the aggregate statistics at [hits.sh/fisheyevla.github.io](https://hits.sh/fisheyevla.github.io/). The counter starts from the deployment that introduced the beacon and measures page loads rather than verified unique visitors.
+
 ## Update release links
 
 - Replace the disabled **Code soon** button in `index.html` when the repository is public.
