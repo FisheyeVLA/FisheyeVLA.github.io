@@ -20,5 +20,5 @@ Page loads are counted with a privacy-friendly, cookie-free Hits beacon. View th
 
 ## Update release links
 
-- Replace the disabled **Code soon** button in `index.html` when the repository is public.
+- Code repository: [FisheyeVLA/fisheye-vla](https://github.com/FisheyeVLA/fisheye-vla).
 - Update the BibTeX journal/arXiv fields after the preprint is posted.
